@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <title>  موقع إدارة  </title>
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="loader-box">
+            <img src="images/loader.gif" alt="loader">
+        </div>
+    </div>
+    
+    <div class="header">
+        <div class="topheader-info wow fadeInDown">
+            <div class="container">
+                <ul>
+                    <li>  info@gmail.com   <img src="images/i-mail.png" alt="img" class="img-fluid"></li>
+                    <li>  000000000   <img src="images/i-call.png" alt="img" class="img-fluid"> </li>
+                </ul>
+
+                <!-- AFTER LOGIN  -->
+                <div class="dropdown">
+                    <button class="btn btn-transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      حسابى   <i class="icofont-thin-down"></i> 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#"> تسجيل الخروج </a>
+                    </div>
+                </div>
+                <!-- FINISHED AFTER LOGIN  -->
+            </div>
+        </div>
+        <div class="nav-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="img" class="img-fluid">
+                </div>
+
+                <!-- AFTER LOGIN  -->
+                <div class="over-lay"> </div>
+                <button class="btn btn-trans toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menue">
+                    <li class="nav-item">
+                        <a class="nav-link" href="office-home.html">   الرئيسية  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="office-profile.html">  الملف الشخصى  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="office-accounts.html"> الحسابات  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="office-contact.html"> اتصل بنا  </a>
+                    </li>
+                </ul>
+
+                <div class="search-btn-box">  
+                    <div class="search-btn"> </div>
+                    <i class="icofont-search-2"> </i> 
+                </div>
+                <!-- FINISHED AFTER LOGIN  -->
+            </div>
+        </div>
+    </div>
+
+    <div class="search-box">
+        <div class="icon-close"> <i class="icofont-close-line"></i>  </div>
+         <input type="text" placeholder="بحث عن ">
+         <button class="btn-transparent"> <i class="icofont-search"></i> </button>
+    </div>
+        
+    <div class="breadcrumb-box  office-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6">
+                    <ol class="breadcrumb wow fadeInUp">
+                        <li class="breadcrumb-item active" aria-current="page">    تعديل العمل     </li>
+                    </ol>
+                </div>
+
+                <!-- AFTER LOGIN  -->
+                <div class="col-6 col-sm-6">
+                    <div class="list-icons wow fadeInUp">
+                        <ul>
+                            <li> 
+                                <a href="office-notifications.html">
+                                    <i class="icofont-alarm"></i>
+                                    <span class="count"> 1 </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- FINISHED AFTER LOGIN  -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="home-content office-add-product">
+        <div class="container">
+            <div class="basic-head wow fadeInUp">
+                <h4>    تعديل العمل      </h4>
+            </div>
+
+            <div class="new-order-wrapper login-form wow fadeInUp">
+                <form action="office-work-page.html">
+
+                    <div class="field"> 
+                        <input type="text" class="form-control" placeholder="اسم العمل   ">
+                    </div>
+                    <div class="field"> 
+                        <input type="text" class="form-control" placeholder=" السعر ">
+                    </div>
+
+                    <div class="field"> 
+                        <input type="text" class="form-control" placeholder=" نوع العمل  ">
+                    </div>
+
+                    <div class="field adress-box"> 
+                        <input type="text" id="address" class="form-control" placeholder="العنوان   ">
+                        <i class="icofont-google-map"></i>
+                    </div>
+                    <div class="map" id="map"> </div>
+                    <input type="hidden" id="lat">
+                    <input type="hidden" id="lng">
+
+                    <textarea class="form-control" placeholder="تفاصيل العمل "></textarea>
+                    
+                    <h6> أضف صورة العمل  </h6>
+                    <div class="field upload-fied">
+                        <label class="fileinput-button" for="files"> <img  src="images/project-photo.png" width="100%">  </label>
+                        <input type="file"  id="files"  name="files[]" multiple/>
+                    </div>
+                    <output id="Filelist"></output>
+
+
+                    <button class="btn btn-green btn-animate" type="submit"> <span>  تاكيد     </span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="horizental-ads wow fadeInUp">
+        <div class="container">
+            <div class="box">
+                <img src="images/ads-horizental.png" alt="img" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="box wow fadeInUp">
+                            <div class="collapse-btn">
+                                <div class="basic-head">
+                                    <h4>  من نحن  </h4>
+                                </div>
+                                <i class="icofont-plus"></i>
+                            </div>
+                            <div class="collapse-content">
+                                <p>  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="box wow fadeInUp">
+                            <div class="collapse-btn">
+                                <div class="basic-head">
+                                    <h4>  الاسئلة & المساعدة  </h4>
+                                </div>
+                                <i class="icofont-plus"></i>
+                            </div>
+                            <div class="collapse-content center">
+                                <ul>
+                                    <li>   هذا النص هو مثال لنص </li>
+                                    <li>   هذا النص هو مثال لنص </li>
+                                    <li>   هذا النص هو مثال لنص </li>
+                                    <li>   هذا النص هو مثال لنص </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="box wow fadeInUp">
+                            <div class="collapse-btn">
+                                <div class="basic-head">
+                                    <h4>  خدمات الموقع  </h4>
+                                </div>
+                                <i class="icofont-plus"></i>
+                            </div>
+                            <div class="collapse-content">
+                                <ul>
+                                    <li> <a href="#">  هذا النص هو مثال لنص  </a></li>
+                                    <li> <a href="#">  هذا النص هو مثال لنص  </a></li>
+                                    <li> <a href="#">  هذا النص هو مثال لنص  </a></li>
+                                    <li> <a href="#">  هذا النص هو مثال لنص  </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="privacy-policy wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p>   كل الحقوق محفوظة لموقع  /<span> إدارة </span></p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>   تصميم و برمجة   / <span> اوامر الشبكة  </span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/edit.js"></script>
+
+    <script  type="text/javascript"> 
+        var map, infoWindow;
+        function initMap() {
+
+        if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+        innerHTML = " حدث خطا أتناء تحديد الموفع ";
+        }
+
+        function showPosition(position) {
+        var Latitude = position.coords.latitude;
+        var Longitude = position.coords.longitude;
+
+
+        document.getElementById("lat").value = position.coords.latitude;
+        document.getElementById("lng").value = position.coords.longitude;
+
+        var latitude = roundOf(position.coords.latitude,4);
+        var longitude = roundOf(position.coords.longitude,4);
+
+        function roundOf(n, p) {
+        const n1 = n * Math.pow(10, p + 1);
+        const n2 = Math.floor(n1 / 10);
+        if (n1 >= (n2 * 10 + 5)) {
+        return (n2 + 1) / Math.pow(10, p);
+        }
+        return n2 / Math.pow(10, p);
+        }
+        var urlTo = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+latitude+","+longitude+"&sensor=true&language=ar";
+        console.log(urlTo);
+        console.log();
+        $.ajax({
+        url:urlTo ,
+        cache: false,
+        success: function(data){
+        if(data.results[0] === undefined ){
+        initMap();
+        }else{
+        var loc = data.results[0].formatted_address;
+        $('#address').html(loc);
+        $('#address').val(loc);
+        }
+        }
+        });
+
+
+        var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+        var map = new google.maps.Map(document.getElementById('map'), {
+        center: latlng,
+        zoom: 16,
+        disableDefaultUI: true,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+        var marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        title: 'Set lat/lon values for this property',
+        draggable: true
+        });
+
+        google.maps.event.addListener(marker, 'dragend', function (event) {
+
+        document.getElementById("lat").value = this.getPosition().lat();
+        document.getElementById("lng").value = this.getPosition().lng();
+
+        var latitude = roundOf(this.getPosition().lat(),4);
+        var longitude = roundOf(this.getPosition().lng(),4);
+
+        function roundOf(n, p) {
+        const n1 = n * Math.pow(10, p + 1);
+        const n2 = Math.floor(n1 / 10);
+        if (n1 >= (n2 * 10 + 5)) {
+        return (n2 + 1) / Math.pow(10, p);
+        }
+        return n2 / Math.pow(10, p);
+        }
+        var urlTo = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+latitude+","+longitude+"&sensor=true&language=ar";
+        console.log(urlTo);
+        console.log();
+        $.ajax({
+        url:urlTo ,
+        cache: false,
+        success: function(data){
+        if(data.results[0] === undefined ){
+        initMap();
+        }else{
+        var loc = data.results[0].formatted_address;
+        $('#address').html(loc);
+        $('#address').val(loc);
+        }
+        }
+        });
+            });
+            }
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5Xz9rMq52xAtXTjm6v_cMeppcxWnm0-M&callback=initMap">
+    </script>
+
+</body>
+
+</html>
